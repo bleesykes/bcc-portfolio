@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- how to use google fonts. https://www.w3schools.com/css/css_font_google.asp -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Brittany Sykes | Homepage</title>
+    <style>
+      /* THIS IS A CSS COMMENT. Comments are only visible in source code not in the browser */
+      /* used css crash course to learn css styles. https://www.w3schools.com/w3css/w3css_web.asp */
+      body {
+        font-family: "Comfortaa", cursive;
+        color: #666544;
+      }
+
+      h2 {
+        font-family: "Cookie", cursive;
+        color: #e9f2f7;
+        text-align: center;
+        font-weight: 500;
+      }
+
+      .navbar {
+        background: url("vintage-floral.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        height: 30px;
+      }
+
+      .container {
+        background: #fdfdfd;
+      }
+
+      /* Followed this tutorial to learn how to split my homepage in half
+        so my name and picture can be on one side of the screen and my 
+        introduction can be on the other half. https://www.w3schools.com/css/css_grid.asp */
+      .card-grid {
+        padding: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      /* followed this tutorial to learn about flexbox 
+      to format the layout of the card containing my 
+      name and picture https://www.w3schools.com/css/css3_flexbox.asp*/
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+        height: 600px;
+        background-color: #f2a202cc;
+        margin: 0 auto;
+        /* width: 20%; */
+      }
+
+      .image1 {
+        text-align: center;
+        padding-top: 20px;
+        margin: 0 auto;
+        height: 40%;
+        width: 100%;
+      }
+
+      .image1 img {
+        height: 100%;
+        width: auto;
+        border-radius: 50%;
+      }
+
+      .info {
+        height: 50%;
+      }
+
+      .bottom {
+        height: 50%;
+        width: 100%;
+        background: url("vintage-floral.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- THIS IS AN HTML COMMENT. Comments are only visible in source code not in the browser */
+      https://www.w3schools.com/html/html_comments.asp -->
+
+    <!-- Div- HTML block tag that defines a section https://www.w3schools.com/tags/tag_div.ASP-->
+    <!-- Class attribute specifies an HTML element. https://www.w3schools.com/html/html_classes.asp -->
+
+    <!--  Empty div tag will contain a background image and be styled with css.
+          https://www.w3schools.com/html/html_images_background.asp -->
+    <div class="navbar"></div>
+
+    <!-- container has card-grid inside -->
+    <div class="container">
+      <!-- card-grid has card and hello inside -->
+      <div class="card-grid">
+        <!-- card has image1, info, bottom inside -->
+        <div class="card">
+          <div class="image1">
+            <img src="me.jpeg" a />
+          </div>
+          <div class="info">
+            <h2>Brittany Sykes</h2>
+            <hr />
+            <a href="education.html">
+              <img src="school.svg" />
+              Education
+            </a>
+            <br />
+            <a href="timemanagement.html">
+              <img src="hourglass.svg" />
+              Time Management
+            </a>
+          </div>
+          <div class="bottom"></div>
+        </div>
+        <!-- hello contains my introduction paragraph -->
+        <div class="hello">
+          <p>Hello!</p>
+          <p>
+            I am a 33 year old Married stay-at-home Mom to a wild almost 2 year
+            old little girl. I graduated from Bristol Community College in 2009
+            with an Associates Degree in Business Administration. I worked in
+            the banking field for many years after.
+          </p>
+
+          <p>
+            I wanted a career change after I had my daughter. With that being
+            said, I am currently attending BCC to pursue an Associate's Degree
+            in Computer Information Systems. I then plan to transfer to a
+            University to obtain a Bachelor's Degree in UX/UI Web Design. I look
+            forward to learning all that I can this semester.
+          </p>
+
+          <p>
+            I consider myself to be a VAK (Visual Auditory and Kinesthetic)
+            learner. I am a visual learner, I prefer watching video tutorials
+            that navigate through each step of how to do something rather than
+            sit there and read a text book about it. I have found infographics
+            on topics to also be helpful when learning.
+          </p>
+          <p>
+            Listening to an audio book versus reading the book myself gives me a
+            better understanding about the topic. Audio books have been great in
+            helping me restart my College journey after 12+ years. Hearing words
+            repeated back in my ear while viewing the text is also very helpful.
+          </p>
+
+          <p>
+            Kinesthetic (movement and touch) learning has been a useful tool to
+            me. When I am learning something new in my CIS programming course,
+            it helps me to touch the keyboard and type out examples and see how
+            each code works. I enjoy seeing the trial and error of it all.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+  </body>
+</html>
